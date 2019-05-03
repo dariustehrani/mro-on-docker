@@ -18,7 +18,7 @@ RUN echo 'Creating notroot user and group from host' \
 # update os & install some basic packages needed later
 RUN apt-get update -y -qq \
     && apt-get dist-upgrade -y -qq \
-    && apt-get install -y -qq --no-install-recommends wget curl build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev apt-transport-https unzip unixodbc unixodbc-dev \
+    && apt-get install -y -qq --no-install-recommends wget curl gnupg ca-certificates build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev apt-transport-https unzip unixodbc unixodbc-dev \
     && apt-get autoremove -y -qq
 
 # install Microsoft R Open (with MKL)
