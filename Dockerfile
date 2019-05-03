@@ -54,7 +54,7 @@ RUN chown notroot:notroot -R /shiny-app
 WORKDIR /shiny-app
 
 COPY ./scripts/entrypoint.sh /usr/local/bin/
-RUN ln -s /usr/local/bin/entrypoint.sh /
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 USER notroot
 EXPOSE 8080
