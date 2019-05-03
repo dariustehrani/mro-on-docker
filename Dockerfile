@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # give our new image a name
-LABEL Name=mro-shiny 
+LABEL Name=mro-shiny
 LABEL Version=1.0.0
 
 # let Ubuntu know that we cannot use an interactive frontend during Docker image build
